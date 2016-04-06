@@ -1,4 +1,10 @@
+var mongoose = require('mongoose');
+var databaseModel = require('../models');
+
 exports.view = function(req, res) {
-    var data = {data: []};
-    res.render("index", data);
+	mongoose.model('message').find(function (err, data) {
+		res.render('index', {
+            "data" : data
+        });
+	});
 }
