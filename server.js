@@ -23,7 +23,7 @@ var databaseModel = require('./models');
 // // Database Connection
 var db = mongoose.connection;
 // mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://127.0.0.1/cogs121');
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://admin:admin@ds047901.mlab.com:47901/cogs121');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://admin:admin@ds049744.mlab.com:49744/cogs121');
 db.on('error', console.error.bind(console, 'Mongo DB Connection Error:'));
 db.once('open', function(callback) {
     console.log("Database connected successfully.");

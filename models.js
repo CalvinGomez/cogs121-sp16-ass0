@@ -6,5 +6,5 @@ var messageSchema = new mongoose.Schema({
 	created: { type: Date, default: Date.now }
 });
 
-var message = mongoose.model('messageTest',messageSchema);
+var message = mongoose.model('message',messageSchema);
 exports.messageModel = message;
